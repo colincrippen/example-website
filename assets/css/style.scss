@@ -2,10 +2,18 @@
 ---
 
 @import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+"minima/skins/{{ site.minima.skin | default: 'classic' }}",
+"minima/initialize";
 
 @import "syntax_highlighting";
 
+// disable the built-in header border
+.site-header {
+  border-top: none;
+}
 
+// change color of social icons
+.grey {
+  color: $brand-color-dimmed;
+}
 
